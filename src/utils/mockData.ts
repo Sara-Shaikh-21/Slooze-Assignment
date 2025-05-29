@@ -9,7 +9,7 @@ export const PRODUCTS: Product[] = [
     price: 24.99,
     stock: 156,
     description: 'Premium quality basmati rice, 5kg package',
-    lastUpdated: '2025-03-15',
+    lastUpdated: '2025-05-29',
   },
   {
     id: '2',
@@ -88,7 +88,7 @@ export const getProduct = (id: string): Promise<Product | null> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const product = PRODUCTS.find(p => p.id === id) || null;
-      resolve(product ? {...product} : null);
+      resolve(product ? { ...product } : null);
     }, 500);
   });
 };
@@ -99,9 +99,9 @@ export const updateProduct = (product: Product): Promise<Product> => {
       // In a real app, this would update a database
       const index = PRODUCTS.findIndex(p => p.id === product.id);
       if (index >= 0) {
-        PRODUCTS[index] = {...product, lastUpdated: new Date().toISOString().split('T')[0]};
+        PRODUCTS[index] = { ...product, lastUpdated: new Date().toISOString().split('T')[0] };
       }
-      resolve({...product, lastUpdated: new Date().toISOString().split('T')[0]});
+      resolve({ ...product, lastUpdated: new Date().toISOString().split('T')[0] });
     }, 800);
   });
 };

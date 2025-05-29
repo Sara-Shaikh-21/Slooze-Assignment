@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     price: 12.50,
     stock: 78,
     description: 'All-purpose wheat flour, 2kg package',
-    lastUpdated: '2025-03-14',
+    lastUpdated: '2025-05-29',
   },
   {
     id: '3',
@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
     price: 8.99,
     stock: 212,
     description: 'Refined white sugar, 1kg package',
-    lastUpdated: '2025-03-12',
+    lastUpdated: '2025-05-29',
   },
   {
     id: '4',
@@ -36,7 +36,7 @@ export const PRODUCTS: Product[] = [
     price: 18.99,
     stock: 43,
     description: 'Premium Arabica coffee beans, 500g package',
-    lastUpdated: '2025-03-10',
+    lastUpdated: '2025-05-29',
   },
   {
     id: '5',
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     price: 15.75,
     stock: 68,
     description: 'Extra virgin olive oil, 750ml bottle',
-    lastUpdated: '2025-03-09',
+    lastUpdated: '2025-05-09',
   },
   {
     id: '6',
@@ -54,7 +54,7 @@ export const PRODUCTS: Product[] = [
     price: 3.25,
     stock: 189,
     description: 'Iodized table salt, 500g package',
-    lastUpdated: '2025-03-08',
+    lastUpdated: '2025-05-05',
   },
   {
     id: '7',
@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
     price: 6.50,
     stock: 12,
     description: 'Ground black pepper, 100g package',
-    lastUpdated: '2025-03-07',
+    lastUpdated: '2025-05-29',
   },
 ];
 

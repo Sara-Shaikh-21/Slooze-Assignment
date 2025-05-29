@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  /* Light mode */
+  html.light {
+    @apply text-gray-900;
+  }
+
+  /* Dark mode */
+  html.dark {
+    @apply text-gray-100;
+  }
+
+  /* Focus styles for better accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-blue-500;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500 dark:bg-gray-600;
+  }
+
+  /* Form elements styling */
+  input, select, textarea {
+    @apply px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition duration-150 ease-in-out;
+  }
+
+  /* Add smooth transition to all interactive elements */
+  button, a, input, select, textarea {
+    @apply transition-all duration-200;
+  }
+}
